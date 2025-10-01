@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VBox xmlns="http://javafx.com/javafx"
+    xmlns:fx="http://javafx.com/fxml"
+    alignment="CENTER"
+    spacing="18">
+
+    <Button text="Close" onAction="#closeApp"/>
+    </VBox>
