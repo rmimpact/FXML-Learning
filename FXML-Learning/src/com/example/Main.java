@@ -9,10 +9,11 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
     @Override
-    public void (Stage stage) throws Exception {
+    public void start(Stage stage) throws Exception {
+        System.out.println(getClass().getResource("ui.fxml"));
         FXMLLoader loader = new FXMLLoader(getClass().getResource("ui.fxml"));
-        Loader.setController(this);
-        Scene scene = new Scene(Loader.load());
+        loader.setController(this);
+        Scene scene = new Scene(loader.load());
         stage.setScene(scene);
         stage.show();
     }
@@ -22,7 +23,7 @@ public class Main extends Application {
         System.exit(0);
     }
 
-    public static void main(String[] string) {
+    public static void main(String[] args) {
         launch();
     }
 }
